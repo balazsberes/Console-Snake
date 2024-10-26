@@ -73,8 +73,8 @@ public class GameLogic
 
         while (true)
         {
-            var randomX = new Random().Next(1, Board.Width - 1);
-            var randomY = new Random().Next(1, Board.Height - 1);
+            var randomX = new Random().Next(3, Board.Width - 1);
+            var randomY = new Random().Next(3, Board.Height - 1);
 
             // If the generated food is inside the snake positions - it's not ok
             if (_snake.PositionList.Contains((randomX, randomY))) continue;
